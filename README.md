@@ -40,9 +40,9 @@ $ composer require tim168/data-dict
     $data->get('test','pdf','zh-CN');
 	
 ## 展示图
-	![pdf示例图](http://chuantu.xyz/t6/727/1585906042x3030586988.png)
-	
-	![html示例图](http://chuantu.xyz/t6/727/1585906131x3030586988.png)
+	![pdf 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/pdf.png)
+    	
+    ![html 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/html.png)
 
 ## License
 **MIT**
