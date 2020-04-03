@@ -40,9 +40,9 @@ $ composer require tim168/data-dict
     $data->get('test','pdf','en');
 	
 ## demo
-	![pdf demo](https://github.com/TIM168/data-dict/blob/master/src/demo/pdf.png)
+![pdf demo](https://github.com/TIM168/data-dict/blob/master/src/demo/pdf.png)
 	
-	![html demo](https://github.com/TIM168/data-dict/blob/master/src/demo/html.png)
+![html demo](https://github.com/TIM168/data-dict/blob/master/src/demo/html.png)
 	
 ## License
 **MIT**

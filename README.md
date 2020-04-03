@@ -38,11 +38,11 @@ $ composer require tim168/data-dict
     $data->get('test','html','zh-CN');
 ## 获取pdf
     $data->get('test','pdf','zh-CN');
-	
-## 展示图
-	![pdf 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/pdf.png)
-    	
-    ![html 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/html.png)
+
+## 示例图
+![pdf 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/pdf.png)
+
+![html 示例图](https://github.com/TIM168/data-dict/blob/master/src/demo/html.png)
 
 ## License
 **MIT**
