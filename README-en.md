@@ -39,6 +39,10 @@ $ composer require tim168/data-dict
 ## get pdf
     $data->get('test','pdf','en');
 	
+## demo
+	![pdf demo](http://chuantu.xyz/t6/727/1585906042x3030586988.png "pdf demo")
+	
+	![html demo](http://chuantu.xyz/t6/727/1585906131x3030586988.png "html demo")
 	
 ## License
 **MIT**
