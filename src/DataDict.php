@@ -12,9 +12,8 @@ class DataDict
     public $dbPassWord;
     public $dbName;
     public $dbPort;
-    public $title = '数据字典';
 
-    public function __construct($dbHost, $dbUserName, $dbPassWord, $dbName, $dbPort)
+    public function __construct($dbHost, $dbUserName, $dbPassWord, $dbName, $dbPort = '3306')
     {
         $this->dbHost = $dbHost;
         $this->dbUserName = $dbUserName;
@@ -23,17 +22,20 @@ class DataDict
         $this->dbPort = $dbPort;
     }
 
-    public function get()
+    public function get($fileName = 'dict', $type = 'html', $lang = 'zh-CN')
     {
         $fetch = new Fetch();
         $tables = $fetch->conn($this->dbHost, $this->dbUserName, $this->dbPassWord, $this->dbName, $this->dbPort);
-        var_dump($tables);
-        exit();
         if (!empty($tables)) {
             $draw = new Draw();
-            $html = $draw->dataToHtml($tables);
-            $content = $draw->ToHtml($this->title, $html);
-            return $content;
+            $html = $draw->dataToHtml($tables, $lang);
+            $content = $draw->ToHtml($lang == 'zh-CN' ? '数据字典' : 'Data Dict', $html);
+            if ($type == 'pdf') {
+                $draw->ToPdfFile($content,$fileName);
+            } else {
+                $draw->ToHtmlFile($content, $fileName);
+            }
         }
+        return true;
     }
 }
