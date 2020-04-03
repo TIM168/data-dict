@@ -4,8 +4,17 @@ namespace Tim168\DataDict\Data;
 
 use Mpdf\Mpdf;
 
+/**
+ * Class Draw
+ * @package Tim168\DataDict\Data
+ */
 class Draw
 {
+    /**
+     * @param $tables
+     * @param string $lang
+     * @return bool|string
+     */
     public function dataToHtml($tables, $lang = 'zh-CN')
     {
         if (!empty($tables)) {
@@ -56,6 +65,11 @@ class Draw
         }
     }
 
+    /**
+     * @param $title
+     * @param $html
+     * @return string
+     */
     public function ToHtml($title, $html)
     {
         $content = '<html>  
@@ -84,6 +98,10 @@ class Draw
         return $content;
     }
 
+    /**
+     * @param $content
+     * @param $fileName
+     */
     public function ToHtmlFile($content, $fileName)
     {
         $filename = $fileName . ".html";
@@ -92,6 +110,11 @@ class Draw
         fclose($handle);
     }
 
+    /**
+     * @param $content
+     * @param $path
+     * @throws \Mpdf\MpdfException
+     */
     public function ToPdfFile($content, $path)
     {
         $mpdf = new Mpdf();

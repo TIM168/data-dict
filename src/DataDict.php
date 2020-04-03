@@ -1,10 +1,18 @@
 <?php
 
+/**
+ * by tim168 <784699571@qq.com>
+ * github https://github.com/TIM168
+ */
 namespace Tim168\DataDict;
 
 use Tim168\DataDict\Data\Draw;
 use Tim168\DataDict\Data\Fetch;
 
+/**
+ * Class DataDict
+ * @package Tim168\DataDict
+ */
 class DataDict
 {
     public $dbHost;
@@ -13,6 +21,14 @@ class DataDict
     public $dbName;
     public $dbPort;
 
+    /**
+     * DataDict constructor.
+     * @param $dbHost
+     * @param $dbUserName
+     * @param $dbPassWord
+     * @param $dbName
+     * @param string $dbPort
+     */
     public function __construct($dbHost, $dbUserName, $dbPassWord, $dbName, $dbPort = '3306')
     {
         $this->dbHost = $dbHost;
@@ -22,6 +38,14 @@ class DataDict
         $this->dbPort = $dbPort;
     }
 
+    /**
+     * @param string $fileName
+     * @param string $type
+     * @param string $lang
+     * @return bool
+     * @throws Exceptions\MysqlErrorException
+     * @throws \Mpdf\MpdfException
+     */
     public function get($fileName = 'dict', $type = 'html', $lang = 'zh-CN')
     {
         $fetch = new Fetch();

@@ -1,6 +1,6 @@
 <h1 align="center"> Data Dict</h1>
 
-<p align="center"> 可以生成HTML、PDF格式数据字典的PHP组件</p>
+<p align="center"> PHP components that can generate data dictionaries in HTML and PDF formats</p>
 
 [![Build Status](https://travis-ci.org/TIM168/data-dict.svg?branch=master)](https://travis-ci.org/TIM168/data-dict)
 [![Latest Stable Version](https://poser.pugx.org/tim168/data-dict/v/stable)](https://packagist.org/packages/tim168/data-dict)
@@ -11,13 +11,13 @@
 
 README: [中文](https://github.com/TIM168/data-dict/blob/master/README.md "中文")/[English](https://github.com/TIM168/data-dict/blob/master/README-en.md "English")
 
-## 安装
+## Install
 
 ```shell
 $ composer require tim168/data-dict
 ```
 
-## 使用
+## Use
     require __DIR__ .'/vendor/autoload.php';
 
     use Tim168\DataDict\DataDict;
@@ -25,23 +25,23 @@ $ composer require tim168/data-dict
     $data = new DataDict('dbHost', 'dbUserName', 'Password', 'dbName','port');
     $data->get('fileName','type','lang');
 
-## 参数说明
-	dbHost：数据库IP地址
-	dbUserName：数据库账号
-	Password：数据库密码
-	dbName：数据库名称
-	port：数据库端口号（默认为3306）
-	fileName：文件名
-	type：html或pdf
-	lang：zh-CN（中文）、en（英文）
-## 获取html
-    $data->get('test','html','zh-CN');
-## 获取pdf
-    $data->get('test','pdf','zh-CN');
+## Parameters
+	dbHost：Database IP address
+	dbUserName：Database account
+	Password：Database password
+	dbName：Database names
+	port：Database port number (3306 by default)
+	fileName：fileName
+	type：html or pdf
+	lang：zh-CN（chinese）、en（english）
+## get html
+    $data->get('test','html','en');
+## get pdf
+    $data->get('test','pdf','en');
 	
 	
 ## License
 **MIT**
 
-## 后语
-#### 欢迎Star
+## End
+#### Thank you for giving me a star

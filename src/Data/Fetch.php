@@ -6,6 +6,15 @@ use Tim168\DataDict\Exceptions\MysqlErrorException;
 
 class Fetch
 {
+    /**
+     * @param $dbHost
+     * @param $dbUserName
+     * @param $dbPassWord
+     * @param $dbName
+     * @param $dbPort
+     * @return array|bool
+     * @throws MysqlErrorException
+     */
     public function conn($dbHost, $dbUserName, $dbPassWord, $dbName, $dbPort)
     {
         try {
