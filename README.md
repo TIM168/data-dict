@@ -8,6 +8,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/tim168/data-dict/v/unstable)](https://packagist.org/packages/tim168/data-dict)
 [![License](https://poser.pugx.org/tim168/data-dict/license)](https://packagist.org/packages/tim168/data-dict)
 [![composer.lock](https://poser.pugx.org/tim168/data-dict/composerlock)](https://packagist.org/packages/tim168/data-dict)
+<a href="https://www.php.net/"><img src="https://img.shields.io/badge/php-%3E%3D5.6-blue"></a>
 
 README: [中文](https://github.com/TIM168/data-dict/blob/master/README.md "中文")/[English](https://github.com/TIM168/data-dict/blob/master/README-en.md "English")
 
