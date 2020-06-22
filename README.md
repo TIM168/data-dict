@@ -4,7 +4,6 @@
 
 [![Build Status](https://travis-ci.org/TIM168/data-dict.svg?branch=master)](https://travis-ci.org/TIM168/data-dict)
 [![Latest Stable Version](https://poser.pugx.org/tim168/data-dict/v/stable)](https://packagist.org/packages/tim168/data-dict)
-[![Total Downloads](https://poser.pugx.org/tim168/data-dict/downloads)](https://packagist.org/packages/tim168/data-dict)
 [![Latest Unstable Version](https://poser.pugx.org/tim168/data-dict/v/unstable)](https://packagist.org/packages/tim168/data-dict)
 [![License](https://poser.pugx.org/tim168/data-dict/license)](https://packagist.org/packages/tim168/data-dict)
 [![composer.lock](https://poser.pugx.org/tim168/data-dict/composerlock)](https://packagist.org/packages/tim168/data-dict)
